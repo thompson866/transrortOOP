@@ -6,7 +6,7 @@ public class Truck extends Transport {
 
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку грузовика");
     }
 
     public void checkEngine() {
