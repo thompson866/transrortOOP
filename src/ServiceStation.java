@@ -1,14 +1,14 @@
 public class ServiceStation {
     public void check(Car car) {
         checkWheeledTransport(car);
-        car.checkEngine();
+        checkEngine(car);
     }
 
 
     public void check(Truck truck) {
 
         checkWheeledTransport(truck);
-        truck.checkEngine();
+        checkEngine(truck);
         truck.checkTrailer();
 
     }
@@ -24,6 +24,9 @@ public class ServiceStation {
         for (int i = 0; i < wheeledTransport.getWheelsCount(); i++) {
             wheeledTransport.updateTyre();
         }
+    }
+    private void checkEngine(TransportRoad transportRoad){
+        transportRoad.checkEngine();
     }
 }
 
